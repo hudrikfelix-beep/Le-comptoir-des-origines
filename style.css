@@ -1,0 +1,133 @@
+/* Style index */
+body { 
+    font-family: Arial, sans-serif; 
+    margin: 0; 
+    padding: 0; 
+    background: #f8f8f8; 
+}
+
+header { 
+    background: #222; 
+    color: white; 
+    padding: 15px; 
+    text-align: center; 
+}
+
+nav a { 
+    color: white; 
+    margin: 0 15px; 
+    text-decoration: none; 
+}
+
+.produits { 
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: center; 
+    padding: 20px; 
+}
+
+.produit { 
+    background: white; 
+    border-radius: 10px; 
+    width: 250px; 
+    margin: 15px; 
+    padding: 15px; 
+    text-align: center; 
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1); 
+}
+
+.produit img { 
+    width: 100%; 
+    border-radius: 10px; 
+}
+
+button { 
+    background: #ff6600; 
+    color: white; 
+    border: none; 
+    padding: 10px; 
+    cursor: pointer; 
+    border-radius: 5px; 
+}
+
+button:hover { 
+    background: #e65c00; 
+}
+
+#panier { 
+    background: white; 
+    padding: 15px; 
+    margin: 20px; 
+    border-radius: 10px; 
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1); 
+}
+/* Style catalogue */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+}
+
+header {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+h1 {
+    margin: 0;
+}
+
+.catalogue {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.produit {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: transform 0.2s ease;
+}
+
+.produit:hover {
+    transform: translateY(-5px);
+}
+
+.produit img {
+    width: 100%;
+    height: auto;
+}
+
+.produit h3 {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.prix {
+    color: #e63946;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #222;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-bottom: 15px;
+}
+
+.btn:hover {
+    background-color: #444;
+}
+ 

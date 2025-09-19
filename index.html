@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Le comptoir des origines</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <h1>Le comptoir des origines</h1>
+    <nav class="navbar">
+        <a href="index.html">Accueil</a>
+        <a href="catalogue.html">Catalogue</a>
+        <a href="contact.html">Contact</a>
+        <a href="galerie.html">Galerie</a>
+    </nav>
+</header>
+
+<section class="produits">
+    <div class="produit">
+        <img src="ricin.jpg" alt="Huile de ricin">
+        <h3>Huile de ricin</h3>
+        <button onclick="ajouterAuPanier('Huile de ricin')">Ajouter au panier</button>
+    </div>
+
+    <div class="produit">
+        <img src="diffriz.jpg" alt="Riz">
+        <h3>Riz</h3>
+        <button onclick="ajouterAuPanier('Riz')">Ajouter au panier</button>
+    </div>
+
+    <div class="Épicerie">
+        <img src="Épicerie.jpg" alt="Épicerie">
+        <h3>Épices</h3>
+        <button onclick="ajouterAuPanier('Épicerie')">Ajouter au panier</button>
+    </div>
+</section>
+
+<section id="panier">
+    <h2>🛒 Mon Panier</h2>
+    <ul id="liste-panier"></ul>
+</section>
+
+<footer>
+    <p>&copy; 2025 Le comptoir des origines - Tous droits réservés</p>
+</footer>
+
+<!-- Script -->
+<script src="script.js"></script>
+</body>
+</html>

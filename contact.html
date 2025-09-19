@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      background: url('logo.jpg') center/cover no-repeat;
+      color: white;
+      margin: 18px;
+      font-family: Arial, sans-serif;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 20px;
+      background: rgba(0,0,0,0.5); /* Fond transparent noir pour lisibilité */
+      padding: 10px;
+      border-radius: 10px;
+    }
+    header a img {
+      width: 120px;
+      display: block;
+      margin: 0 auto 10px;
+    }
+    .navbar a {
+      margin: 0 10px;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    form {
+      max-width: 400px;
+      margin: 20px auto;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      background: rgba(0,0,0,0.5);
+      padding: 20px;
+      border-radius: 10px;
+    }
+    form input, form textarea {
+      padding: 8px;
+      border-radius: 5px;
+      border: none;
+    }
+    #panier {
+      margin-top: 30px;
+      text-align: center;
+      background: rgba(0,0,0,0.5);
+      padding: 15px;
+      border-radius: 10px;
+    }
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      background: rgba(0,0,0,0.5);
+      padding: 10px;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <a href="index.html">
+      <img src="logo.jpg" alt="Logo du site">
+    </a>
+    <h1>Le comptoir des origines</h1>
+    <nav class="navbar">
+      <a href="index.html">Accueil</a>
+      <a href="catalogue.html">Catalogue</a>
+      <a href="contact.html">Contact</a>
+      <a href="galerie.html">Galerie</a>
+    </nav>
+  </header>
+
+  <h2 style="text-align:center;">Contact</h2>
+
+  <!-- Formulaire Formspree -->
+  <form action="https://formspree.io/f/xldlppla" method="POST">
+    <label for="nom">Nom :</label>
+    <input type="text" name="nom" id="nom" required>
+
+    <label for="email">Courriel :</label>
+    <input type="email" name="email" id="email" required>
+
+    <label for="message">Message :</label>
+    <textarea name="message" id="message" required></textarea>
+
+    <input type="submit" value="Envoyer">
+  </form>
+
+  <p style="text-align:center;">
+    Suivez-nous : 
+    <a href="https://www.facebook.com/" target="_blank">Facebook</a> | 
+    <a href="https://www.formula1.com/" target="_blank">Site officiel de la F1</a><br>
+    Tel : 000-444-5555
+  </p>
+
+  <section id="panier">
+    <h2>🛒 Mon Panier</h2>
+    <ul id="liste-panier"></ul>
+    <p>Total : <span id="total">0</span> $</p>
+
+    <h2>💳 Paiement</h2>
+    <div id="paypal-button-container"></div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Ma Boutique de Mode - Tous droits réservés</p>
+  </footer>
+
+  <!-- PayPal SDK -->
+  <script src="https://www.paypal.com/sdk/js?client-id=AUF5h3c8rQJG4bxoqheTMaxiBkjFBlBwFf_14ZAeg362pXqyBxvrMnEE2_6mjJYo4s9vtXiC7XOI1Re4&currency=USD"></script>
+  <script src="script.js"></script>
+
+</body>
+</html>
