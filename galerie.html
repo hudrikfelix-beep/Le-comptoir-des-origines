@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catalogue - Le comptoir des origines</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>Le comptoir des origines</h1>
+  <nav class="navbar">
+    <a href="index.html">Accueil</a>
+    <a href="catalogue.html">Catalogue</a>
+    <a href="contact.html">Contact</a>
+    <a href="galerie.html">Galerie</a>
+  </nav>
+</header>
+
+<main>
+  <!-- Section Huiles naturelles -->
+  <section class="categorie">
+    <h2>🌿 Huiles naturelles</h2>
+    <div class="produits">
+      <div class="produit">
+        <img src="ricin.jpg" alt="Huile de ricin">
+        <h3>Huile de ricin</h3>
+        <p class="prix">49,99 $</p>
+        <button onclick="ajouterAuPanier('Huile de ricin', 49.99)">Ajouter au panier</button>
+      </div>
+      <div class="produit">
+        <img src="moringa.jpg" alt="Huile de moringa">
+        <h3>Huile de moringa</h3>
+        <p class="prix">59,99 $</p>
+        <button onclick="ajouterAuPanier('Huile de moringa', 59.99)">Ajouter au panier</button>
+      </div>
+      <div class="produit">
+        <img src="neem.jpg" alt="Huile de neem">
+        <h3>Huile de neem</h3>
+        <p class="prix">39,99 $</p>
+        <button onclick="ajouterAuPanier('Huile de neem', 39.99)">Ajouter au panier</button>
+      </div>
+      <div class="produit">
+        <img src="moricin.jpg" alt="Huile de moricin">
+        <h3>Huile de moricin</h3>
+        <p class="prix">44,99 $</p>
+        <button onclick="ajouterAuPanier('Huile de moricin', 44.99)">Ajouter au panier</button>
+      </div>
+      <div class="produit">
+        <img src="amande.jpg" alt="Huile d’amande">
+        <h3>Huile d’amande</h3>
+        <p class="prix">54,99 $</p>
+        <button onclick="ajouterAuPanier('Huile d’amande', 54.99)">Ajouter au panier</button>
+      </div>
+      <div class="produit">
+        <img src="castor.jpg" alt="Huile de castor">
+        <h3>Huile de castor</h3>
+        <p class="prix">42,99 $</p>
+        <button onclick="ajouterAuPanier('Huile de castor', 42.99)">Ajouter au panier</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section Produits agricoles -->
+  <section class="categorie">
+    <h2>🌾 Produits agricoles</h2>
+    <div class="produits">
+      <div class="produit">
+        <img src="rizblanc.jpg" alt="Riz blanc">
+        <h3>Riz blanc</h3>
+        <p class="prix">19,99 $</p>
+        <button onclick="ajouterAuPanier('Riz blanc', 19.99)">Ajouter au panier</button>
+      </div>
+      <div class="produit">
+        <img src="riz-jaune.jpg" alt="Riz jaune">
+        <h3>Riz jaune</h3>
+        <p class="prix">21,99 $</p>
+        <button onclick="ajouterAuPanier('Riz jaune', 21.99)">Ajouter au panier</button>
+      </div>
+      <div class="produit">
+        <img src="djondjon.jpg" alt="Djondjon">
+        <h3>Djondjon</h3>
+        <p class="prix">29,99 $</p>
+        <button onclick="ajouterAuPanier('Djondjon', 29.99)">Ajouter au panier</button>
+      </div>
+      <div class="produit">
+        <img src="petit-mil.jpg" alt="Petit mil">
+        <h3>Petit mil</h3>
+        <p class="prix">24,99 $</p>
+        <button onclick="ajouterAuPanier('Petit mil', 24.99)">Ajouter au panier</button>
+      </div>
+      <div class="produit">
+        <img src="farine-giraumon.jpg" alt="Farine de giraumon">
+        <h3>Farine de giraumon</h3>
+        <p class="prix">34,99 $</p>
+        <button onclick="ajouterAuPanier('Farine de giraumon', 34.99)">Ajouter au panier</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Panier -->
+  <section id="panier">
+    <h2>🛒 Mon Panier</h2>
+    <ul id="liste-panier"></ul>
+    <p>Total : <span id="total">0</span> $</p>
+  </section>
+</main>
+
+<footer>
+  <p>&copy; 2025 Le comptoir des origines - Tous droits réservés</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
